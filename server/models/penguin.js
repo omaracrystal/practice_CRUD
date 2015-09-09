@@ -1,6 +1,8 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
-// manage environment variables
+
+
+
 
 var Penguin = new Schema ({
   name: String,
@@ -8,6 +10,9 @@ var Penguin = new Schema ({
   nemesis: String
 });
 
+
+
+// setting the stage for more advanced uses of environmental variables
 //setting uri mongodb://... to variable DB_HOST
 process.env.DB_HOST = 'mongodb://localhost/node-penguins';
 
